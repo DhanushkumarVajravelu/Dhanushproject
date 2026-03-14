@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Future Paths</title>
+    <style>
+    /* 1. Same Waterfall Background */
+    body {
+      background-image: url('https://www.shutterstock.com/shutterstock/videos/1008944816/thumb/1.jpg?ip=x480');
+      background-size: cover;
+      background-attachment: fixed;
+      font-family: sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center; 
+      align-items: center;
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+
+    /* 2. Glass Box Effect (Same as Godavari page) */
+    .wireframe-box {
+        width: 96vw;  
+        height: 92vh; 
+        background: rgba(255, 255, 255, 0.1); 
+        backdrop-filter: blur(20px); 
+        -webkit-backdrop-filter: blur(20px);
+        border: 1.5px solid rgba(255, 255, 255, 0.2);
+        border-radius: 25px;
+        padding: 40px;
+        box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+    }
+
+    /* 3. Cursive Title Style */
+    .title {
+        font-family: 'Brush Script MT', cursive;
+        font-size: clamp(30px, 5vw, 55px);
+        color: white;
+        text-shadow: 2px 2px 10px rgba(0,0,0,0.4);
+        margin: 0 0 10px 0;
+    }
+
+    .subtitle {
+        font-size: 18px;
+        color: rgba(255, 255, 255, 0.7);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        padding-bottom: 15px;
+        margin-bottom: 40px;
+    }
+
+    /* 4. Grid Layout for Cards */
+    .cards-row {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 25px;
+        flex-grow: 1;
+    }
+
+    /* 5. Card Styling & Removing Underlines */
+    a {
+        text-decoration: none; /* This REMOVES the underline from links! 🚫 */
+        display: flex; /* Makes the link fill the card area */
+    }
+
+    .card {
+        /* Placeholder for background image */
+        background-image: linear-gradient(rgba(110, 0, 207, 0.5), rgba(110, 0, 207, 0.5)), url('YOUR_IMAGE_URL');
+        background-size: cover;
+        background-position: center;
+        background-color: #6e00cf;
+        
+        border-radius: 20px;
+        color: #ffffff;
+        width: 100%; /* Fill the anchor tag width */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        transition: 0.3s ease;
+        box-sizing: border-box;
+    }
+
+    .card:hover {
+        transform: scale(1.05);
+        background-color: #a733e8;
+    }
+
+    button {
+        margin-top: 15px;
+        border-radius: 30px;
+        border: none;
+        padding: 10px 25px;
+        cursor: pointer;
+        background: white;
+        color: #6e00cf;
+        font-weight: bold;
+        font-size: 16px;
+    }
+
+    /* Phone view adjustment */
+    @media (max-width: 600px) {
+        .wireframe-box {
+            height: auto;
+            padding: 20px;
+            margin: 10px;
+        }
+    }
+    </style>
+</head>
+<body>
+
+    <div class="wireframe-box">
+        
+        <div class="title">Paths we see..!</div>
+        <div class="subtitle">Future Opportunities</div>
+
+        <div class="cards-row">
+            <a href="aboutfurtherstudies.html">
+                <div class="card">
+                    Further<br>studies
+                    <button>Click me</button>
+                </div>
+            </a>
+
+            <a href="employment.html">
+                <div class="card">
+                    Employment
+                    <button>Click me</button>
+                </div>
+            </a>
+
+            <a href="aboutcompetitiveexams.html">
+                <div class="card">
+                    Competitive<br>exams
+                    <button>Click me</button>
+                </div>
+            </a>
+
+            <a href="aboutentrepreneurship.html">
+                <div class="card">
+                    Entrepreneurship
+                    <button>Click me</button>
+                </div>
+            </a>
+        </div>
+
+    </div>
+
+</body>
+</html>
